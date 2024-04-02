@@ -1,0 +1,36 @@
+﻿@import url('variables.css');
+
+@media screen and (min-width: 1440px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    a {
+        font-family: "Montserrat", sans-serif;
+        font-weight: var(--regular-font-weight);
+        font-size: var(--t3-text-size);
+        color: var(--main-white);
+        text-decoration: none;
+        line-height: var(--main-lineheight);
+    }
+
+    #links {
+        display: flex;
+        gap: 30px;
+    }
+
+    #phone {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+    #number {
+        font-family: "Montserrat", sans-serif;
+        font-weight: var(--semibold-font-weight);
+        font-size: var(--t2-montserrat-text-size);
+        line-height: var(--main-lineheight);
+    }
+}

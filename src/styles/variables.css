@@ -1,0 +1,20 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --main-color: #133457;
+    --accent-color: #07305D;
+    --tertiary-color: #0F1D45;
+    --main-white: #FFFFFF;
+    --h1-text-size: 65px;
+    --h2-text-size: 55px;
+    --t1-montserrat-text-size: 40px;
+    --t1-raleway-text-size: 18px;
+    --t2-montserrat-text-size: 18px;
+    --t2-raleway-text-size: 16px;
+    --t3-text-size: 14px;
+    --semibold-font-weight: 600;
+    --regular-font-weight: 400;
+    --accent-lineheight: 35px;
+    --main-lineheight: 41px;
+}
+

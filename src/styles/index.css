@@ -1,0 +1,65 @@
+@import url('variables.css');
+
+@media screen and (min-width: 320px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        padding: 40px 0 0 15px;
+        margin: 0;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-image: url('../images/f976d9ea74711ab2a905ee3167b268cf.jfif');
+        background-repeat: no-repeat;
+        background-position: 65% 0%;
+        background-size: 745px 645px;
+        background-color: var(--main-color);
+        color: var(--main-white);
+    }
+
+    #background {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        backdrop-filter: blur(13.5px);
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(19, 52, 87, 0.87);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        padding: 40px 0 0 0;
+        background-size: 100%;
+    }
+
+    .blurBg {
+        position: absolute;
+        width: 1021.08px;
+        height: 479.03px;
+        background: rgba(66, 132, 229, 0.2);
+        filter: blur(120.5px);
+        transform: rotate(-67deg);
+    }
+
+    .firstBg {
+        left: -20%;
+        top: -30%;
+    }
+
+    .secondBg {
+        left: 80%;
+    }
+
+    .thirdBg {
+        left: 80%;
+        top: 60%;
+    }
+}
+

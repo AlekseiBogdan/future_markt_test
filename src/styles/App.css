@@ -1,0 +1,45 @@
+@import url('variables.css');
+
+@media screen and (min-width: 320px) {
+
+}
+
+@media screen and (min-width: 1440px) {
+  #wrapper {
+    width: 1320px;
+    margin: 0 auto;
+  }
+
+  #mainContent {
+    margin-top: 175px;
+    width: 747px;
+  }
+
+  #mainHeader { 
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    font-weight: var(--semibold-font-weight);
+    font-size: var(--h1-text-size);
+    margin-bottom: 50px;
+  }
+
+  #mentor {
+    position: absolute;
+    z-index: -1;
+    top: 111px;
+    left: 1184px;
+  }
+
+  #buttons {
+    margin: 64px 0 112px 0;
+    display: flex;
+    gap: 40px;
+    flex-wrap: nowrap;
+  }
+
+  #bottomInfo {
+    display: flex;
+    gap: 230px;
+  }
+}
+

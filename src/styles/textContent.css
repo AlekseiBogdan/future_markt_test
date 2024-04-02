@@ -1,0 +1,20 @@
+﻿@import url('variables.css');
+
+@media screen and (min-width: 1440px) {
+    #descriptionWrapper {
+        padding-left: 24px;
+        border-left: 1px solid var(--main-white);
+        width: 699px;
+        height: 39px;
+        display: flex;
+        align-items: center;
+      }
+    
+      .description {
+        font-family: "Raleway", sans-serif;
+        font-weight: var(--regular-font-weight);
+        font-size: var(--t2-raleway-text-size);
+        opacity: 0.5;
+        line-height: 24px;
+      }
+}
