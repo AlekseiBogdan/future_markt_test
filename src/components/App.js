@@ -11,6 +11,8 @@ import Button from './Button.js';
 import BottomText from './bottomText.js';
 import ConsultMenu from './consultMenu.js'
 
+
+//simple fetchAPI async function to get GBP value
 const getGBP = async () => {
   const res = await fetch('https://www.cbr-xml-daily.ru/daily_json.js')
   const json = await res.json()
@@ -54,16 +56,16 @@ function App() {
       </section>
       <div id='buttons'>
         <MediaQuery maxWidth={1023}>
-          <Button text='Записаться' color='white' device='mobile' svgFill="#0B3461" onClick={showPopup}/>
-          <Button text='Заказать звонок' color='transparent' device='mobile' svgFill='#FFF' onClick={showPopup}/>
+          <Button text='Записаться' color='white' device='mobile' svgFill="#0B3461" onClick={ showPopup }/>
+          <Button text='Заказать звонок' color='transparent' device='mobile' svgFill='#FFF' onClick={ showPopup }/>
         </MediaQuery>
         <MediaQuery minWidth={1024} maxWidth={1439}>
-          <Button text='Получить консультацию' color='white' svgFill="#0B3461" onClick={showPopup}/>
-          <Button text='Бесплатная консультация' color='transparent' svgFill='#FFF' onClick={showPopup}/>
+          <Button text='Получить консультацию' color='white' svgFill="#0B3461" onClick={ showPopup }/>
+          <Button text='Бесплатная консультация' color='transparent' svgFill='#FFF' onClick={ showPopup }/>
         </MediaQuery>
         <MediaQuery minWidth={1440}>
-          <Button text='Записаться на консультацию' color='white' svgFill="#0B3461" onClick={showPopup}/>
-          <Button text='Бесплатная консультация' color='transparent' svgFill='#FFF' onClick={showPopup}/>
+          <Button text='Записаться на консультацию' color='white' svgFill="#0B3461" onClick={ showPopup }/>
+          <Button text='Бесплатная консультация' color='transparent' svgFill='#FFF' onClick={ showPopup }/>
         </MediaQuery>
       </div>
       <div id='bottomInfo'>

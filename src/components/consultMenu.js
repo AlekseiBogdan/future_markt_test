@@ -67,10 +67,10 @@ function ConsultMenu(props) {
                             </label>
                         </form>
                         <MediaQuery maxWidth={1439}>
-                        <Button text='Заказать обратный звонок' color='transparent' device='mobileForm' svgFill='#FFF' onClick={validate}/>
+                            <Button text='Заказать обратный звонок' color='transparent' device='mobileForm' svgFill='#FFF' onClick={validate}/>
                         </MediaQuery>
                         <MediaQuery minWidth={1440}>
-                        <Button text='Заказать обратный звонок' color='transparent' svgFill='#FFF' onClick={validate}/>
+                            <Button text='Заказать обратный звонок' color='transparent' svgFill='#FFF' onClick={validate}/>
                         </MediaQuery>
                         <span id='warning'>{validation ? '' : 'Заполните все поля, чтобы продолжить'}</span>
                     </div>
