@@ -1,12 +1,48 @@
 @import url('variables.css');
 
+@-webkit-keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+#root {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+
 @media screen and (min-width: 320px) {
     * {
         box-sizing: border-box;
     }
 
     body {
-        padding: 40px 0 0 15px;
         margin: 0;
         height: 100%;
         overflow-x: hidden;
@@ -35,7 +71,7 @@
 
 @media screen and (min-width: 1440px) {
     body {
-        padding: 40px 0 0 0;
+        padding: 0px 0 0 0;
         background-size: 100%;
     }
 
