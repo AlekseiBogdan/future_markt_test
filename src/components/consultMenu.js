@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import MediaQuery from 'react-responsive';
 
 import '../styles/consultMenu.css'
 import logo from '../images/logo.svg'
@@ -27,7 +28,10 @@ function ConsultMenu(props) {
         
     }
 
-    function closePopup() {props.setTrigger(false); setShowSent(false);}
+    function closePopup() {
+        props.setTrigger(false); 
+        setShowSent(false);
+    }
 
     return (props.trigger) ? (
         <div className='popup'>
@@ -47,25 +51,30 @@ function ConsultMenu(props) {
                 </div>
             ) : (
                 <div id='feedback'>
-                <h2 id='popupHeader'>Закажите обратный звонок</h2>
-                <div id='formWrapper'>
-                    <form>
-                        <input type='text' placeholder='ИМЯ' />
-                        <input type='tel' placeholder='ТЕЛЕФОН'/>
-                        <label id='checkbox'>
-                            <input type='checkbox' />
-                            <span id='customCheckbox'>
-                                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1L10.75 20L22 1" stroke="white"/> 
-                                </svg>
-                            </span>
-                            <span>Согласен на сохранение и обработку персональных данных</span>
-                        </label>
-                    </form>
-                    <Button text='Заказать обратный звонок' color='transparent' svgFill='#FFF' onClick={validate}/>
-                    <span id='warning'>{validation ? '' : 'Заполните все поля, чтобы продолжить'}</span>
+                    <h2 id='popupHeader'>Закажите обратный звонок</h2>
+                    <div id='formWrapper'>
+                        <form>
+                            <input type='text' placeholder='ИМЯ' />
+                            <input type='tel' placeholder='ТЕЛЕФОН'/>
+                            <label id='checkbox'>
+                                <input type='checkbox' />
+                                <span id='customCheckbox'>
+                                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L10.75 20L22 1" stroke="white"/> 
+                                    </svg>
+                                </span>
+                                <span>Согласен на сохранение и обработку персональных данных</span>
+                            </label>
+                        </form>
+                        <MediaQuery maxWidth={1439}>
+                        <Button text='Заказать обратный звонок' color='transparent' device='mobileForm' svgFill='#FFF' onClick={validate}/>
+                        </MediaQuery>
+                        <MediaQuery minWidth={1440}>
+                        <Button text='Заказать обратный звонок' color='transparent' svgFill='#FFF' onClick={validate}/>
+                        </MediaQuery>
+                        <span id='warning'>{validation ? '' : 'Заполните все поля, чтобы продолжить'}</span>
+                    </div>
                 </div>
-            </div>
             )}
         </div>
         </div>

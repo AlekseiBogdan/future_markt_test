@@ -1,20 +1,33 @@
 ﻿@import url('variables.css');
 
+@media screen and (min-width: 320px) {
+  #descriptionWrapper {
+    padding-left: 6px;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    width: 160px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+  }
+
+  .description {
+    font-family: "Raleway", sans-serif;
+    font-weight: var(--regular-font-weight);
+    font-size: 11px;
+    opacity: 0.5;
+    line-height: 17px;
+  }
+}
+
 @media screen and (min-width: 1440px) {
     #descriptionWrapper {
         padding-left: 24px;
-        border-left: 1px solid var(--main-white);
         width: 699px;
         height: 39px;
-        display: flex;
-        align-items: center;
       }
     
       .description {
-        font-family: "Raleway", sans-serif;
-        font-weight: var(--regular-font-weight);
         font-size: var(--t2-raleway-text-size);
-        opacity: 0.5;
         line-height: 24px;
       }
 }

@@ -1,9 +1,9 @@
 import '../styles/button.css';
 
 function Button(props) {
-    
+    const classes = `${props.color} ${props.device}`
     return (
-        <button onClick={props.onClick} className={props.color}>
+        <button onClick={props.onClick} className={classes}>
             <span>{props.text}</span>
             <svg id='line' width="2" height="71" viewBox="0 0 2 71" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line x1="1" y1="-4.37114e-08" x2="1" y2="71" stroke={props.svgFill} strokeWidth="2"/>

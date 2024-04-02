@@ -1,8 +1,101 @@
 @import url('variables.css');
 
-@media screen and (min-width: 320px) {
-
+#mainHeader {
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    font-weight: var(--semibold-font-weight);
 }
+
+#bottomInfo {
+  display: flex;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 320px) {
+  #wrapper {
+    width: 288px;
+    margin: 0 auto;
+  }
+
+  #mainContent {
+    margin-top: 66px;
+    width: 252px;
+  }
+
+  #mainHeader { 
+    font-size: 25px;
+    margin-bottom: 35px;
+    line-height: 33px;
+  }
+
+  #buttons {
+    margin: 50px 0 92px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  #bottomInfo {
+    gap: 10px;
+  }
+
+  #mentor {
+    position: absolute;
+    z-index: -1;
+    bottom: -35%;
+    left: 0%;
+    transform: scale(50%);
+  }
+}
+
+@media screen and (min-width: 524px) {
+  #mentor {
+    left: 20%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #mentor {
+    left: 40%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #wrapper {
+    width: 824px;
+    margin: 0 auto;
+  }
+
+  #mainContent {
+    margin-top: 100px;
+    width: 450px;
+  }
+
+  #mainHeader { 
+    font-size: 40px;
+    margin-bottom: 50px;
+    line-height: 60px;
+  }
+
+  #buttons {
+    margin: 50px 0 92px 0;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  #mentor {
+    position: absolute;
+    z-index: -1;
+    bottom: -20%;
+    left: 65%;
+    transform: scale(80%);
+  }
+}
+
 
 @media screen and (min-width: 1440px) {
   #wrapper {
@@ -16,18 +109,17 @@
   }
 
   #mainHeader { 
-    text-transform: uppercase;
-    font-family: "Raleway", sans-serif;
-    font-weight: var(--semibold-font-weight);
     font-size: var(--h1-text-size);
     margin-bottom: 50px;
+    line-height: 88px;
   }
 
   #mentor {
     position: absolute;
     z-index: -1;
-    top: 111px;
-    left: 1184px;
+    bottom: 0%;
+    left: 65%;
+    transform: scale(100%);
   }
 
   #buttons {
@@ -38,7 +130,6 @@
   }
 
   #bottomInfo {
-    display: flex;
     gap: 230px;
   }
 }
