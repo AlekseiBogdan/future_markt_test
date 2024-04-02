@@ -19,13 +19,44 @@
         outline: none;
         cursor: pointer;
         position: absolute;
+        z-index: 4;
         top: 20px;
         left: 80%;
     }
 
+    #feedback {
+        margin: 108px 0 0 0;
+    }
+
+    #feedbackSent {
+        margin: 199px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #feedbackSent > h2 {
+        width: 45%;
+        font-family: 'Raleway', sans-serif;
+        font-size: 50px;
+        line-height: 79px;
+        text-align: center;
+    }
+
+    #feedbackSent > h2 + h2 {
+        width: 70%;
+        font-size: 40px;
+    }
+
+    #feedbackSent > img {
+        position: absolute;
+        top: 90%;
+        left: 60%;
+    }
+
     #popupHeader {
         font-family: 'Raleway', sans-serif;
-        margin: 108px 0 66px 90px;
+        margin: 0 0 66px 90px;
         font-size: 50px;
         line-height: 75px;
         width: 490px;
